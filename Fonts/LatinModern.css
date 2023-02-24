@@ -1,0 +1,77 @@
+/*
+
+@import url('https://SonnisFileDelivery.github.io/Fonts/LatinModern.css');
+
+*/
+
+
+@font-face {
+    font-family: 'Latin Modern';
+    font-weight: 400;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/latinmodern-math.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-style: italic;
+    font-weight: 400;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmmono10-italic.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Mono';
+    font-weight: 400;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmmono10-regular.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Roman';
+    font-weight: bold;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmroman10-bold.otf');
+}
+
+
+@font-face {
+    font-family: 'Latin Modern Roman';
+    font-weight: bold;
+    font-style: italic;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmroman10-bolditalic.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Roman';
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmroman10-regular.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    font-weight: bold;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmsans10-bold.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    font-weight: bold;
+    font-style: italic;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmsans10-boldoblique.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    font-weight: 400;
+    font-style: italic;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmsans10-oblique.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Sans';
+    font-weight: 400;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmroman10-italic.otf');
+}
+
+@font-face {
+    font-family: 'Latin Modern Roman';
+    font-weight: 400;
+    font-style: italic;
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmsans10-regular.otf');
+}
