@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'LM Math';
     font-weight: 400;
-    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/latinmodern-math.otf');
+    src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmromanunsl10-regular.otf');
 }
 
 @font-face {
@@ -35,7 +35,6 @@
     font-weight: bold;
     src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmroman10-bold.otf');
 }
-
 
 @font-face {
     font-family: 'LM Roman';
