@@ -64,13 +64,13 @@
 @font-face {
     font-family: 'LM Sans';
     font-weight: 400;
-    font-style: italic;
     src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmsans10-oblique.otf');
 }
 
 @font-face {
     font-family: 'LM Sans';
     font-weight: 400;
+    font-style: italic;
     src: url('https://raw.githubusercontent.com/david-zhang123/LatinModern/main/lmroman10-italic.otf');
 }
 
