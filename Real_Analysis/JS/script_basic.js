@@ -5,11 +5,14 @@ $(document).ready(function () {
         return html;
     });
     $("body").html(function (_, html) {
-        html = html.replace(/\\\((.*?)\\\)/g, '<span class="inlinemathfield">$1</span>');
+        html = html.replace(/\\\(.*?\\\)/g, function (match) {
+            return "<math-field class='inlinemath'>" + match.slice(2, -2) + "</math-field>";
+        });
         return html;
     });
+
     $("body").html(function (_, html) {
-        html = html.replace(/\\\\/g, "<br>");
+        html = html.replace(/\\\\/g, '<div class="filler"></div>');
         return html;
     });
     $("body").wrapInner('<div class="container"></div>');

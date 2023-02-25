@@ -6,6 +6,7 @@
     --dirtyWhite: rgb(245, 245, 245);
     --white: white;
     --whiteDiff: white;
+    --highlight-color: rgba(94, 214, 214, 0.315);
 }
 
 /*#region Setting Overides*/
@@ -17,6 +18,19 @@
     text-align: justify;
     font-size: 1.1em;
     vertical-align: middle !important;
+}
+
+.mq-math-mode .mq-selection,
+.mq-editable-field .mq-selection,
+.mq-math-mode .mq-selection .mq-non-leaf,
+.mq-editable-field .mq-selection .mq-non-leaf,
+.mq-math-mode .mq-selection .mq-scaled,
+.mq-editable-field .mq-selection .mq-scaled {
+    background-color: #d0f4f4 !important;
+    border-radius: -0px !important;
+    fill: rgb(78, 85, 85) !important;
+    color: rgb(78, 85, 85);
+    border-color: HighlightText;
 }
 
 .container {
@@ -33,6 +47,8 @@ math-field {
     background-color: var(--white) !important;
     color: var(--black) !important;
     fill: var(--black) !important;
+    display: inline;
+    background-color: transparent !important;
 }
 
 .mq-nonSymbola {
@@ -197,7 +213,7 @@ h1 {
 }
 
 h2 {
-    margin: 2.5em 0 -3px 0;
+    margin: 1.5em 0 -3px 0;
     font-size: 1.5em;
     font-family: 'LM';
     counter-increment: h2-counter;
@@ -235,4 +251,32 @@ h3:before {
 body {
     color: var(--black);
     background-color: var(--whiteDiff)
+}
+
+.filler {
+    height: 1.2em;
+}
+
+::selection {
+    background: var(--highlight-color);
+    color: rgb(78, 85, 85);
+}
+
+.inlinemath {
+    transform: scale(0.9, 0.9);
+    position: relative;
+    bottom: 8px;
+}
+
+#loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
 }
