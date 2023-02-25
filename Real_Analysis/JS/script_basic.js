@@ -8,10 +8,10 @@ function Prep(PrevLink, NextLink) {
         //#region FooterTemplate 1
         var footer_template1 = `
         <footer>
-            <span>&copy; 2023 Your Company. All Rights Reserved.</span><div></div>
-                <a href="#">Terms of Use</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Contact Us</a>
+            <span>Website created by David Zhang</span><div></div>
+                <a href="#">About Me</a>
+                <a href="#">About This Site</a>
+                <a href="#">Contact Me</a>
             </ul>
         </footer>
         <style>

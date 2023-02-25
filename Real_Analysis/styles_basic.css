@@ -19,12 +19,13 @@
     vertical-align: middle !important;
 }
 
+
 var {
     font-family: 'LM Math' !important;
 }
 
 math-field {
-    font-family: 'LM math' !important;
+    font-family: 'LM';
     font-style: italic !important;
     background-color: var(--white) !important;
     color: var(--black) !important;
@@ -74,21 +75,48 @@ big {
     margin-left: 8px !important;
 }
 
+.mq-binary-operator {
+    font-family: "LM Math" !important;
+    font-style: normal !important;
+}
+
 .mq-to, .mq-from {
-    text-align: center;
+    text-align: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
 }
 
-.mq-to {
-    margin-bottom: -5px !important;
+.mq-from small span {
+    font-size: 1.55em !important;
+    position: relative !important;
+    top: 2px !important;
 }
 
-.mq-from {
-    margin-top: -5px !important;
+.mq-from small .mq-binary-operator {
+    font-size: 1.55em !important;
+    position: relative !important;
+    top: 0px !important;
 }
+
+
+.mq-large-operator span {
+    font-family: 'LM' !important;
+    font-style: normal;
+}
+
 
 .mq-root-block {
     transform: scale(1.1, 1.1);
 }
+
+.mq-numerator {
+    margin-bottom: 5px !important;
+}
+
+.sum {
+    font-style: normal;
+}
+
 
 /*#endregion*/
 
@@ -99,7 +127,7 @@ body {
 }
 
 .container {
-    padding: 48px 27.5% 0 27.5%;
+    padding: 48px 30% 0 30%;
 }
 
 main {
@@ -120,11 +148,11 @@ main {
 }
 
 p {
-    text-indent: 3em;
     font-family: 'LM';
     white-space: pre-wrap;
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: var(--grayDeep)
 }
 
 h1 {
@@ -156,10 +184,9 @@ h1 {
 }
 
 h2 {
-    margin: 1em 0 -.4em 0;
+    margin: 2.5em 0 -.4em 0;
     font-size: 1.5em;
     font-family: 'LM';
-    letter-spacing: 1px;
     counter-increment: h2-counter;
 }
 
@@ -169,7 +196,7 @@ h2:before {
 }
 
 h3 {
-    margin: 0.8em 0 -.5em 0;
+    margin: 1.5em 0 -.9em 0;
     font-size: 1.2em;
     font-family: 'LM';
     letter-spacing: 1px;
