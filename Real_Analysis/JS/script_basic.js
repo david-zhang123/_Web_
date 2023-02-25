@@ -9,7 +9,7 @@ $(document).ready(function () {
         return html;
     });
     $("body").html(function (_, html) {
-        html = html.replace(/\\\\/g, "<div class="filler"></div>");
+        html = html.replace(/\\\\/g, '<div class="filler"></div>');
         return html;
     });
     $("body").wrapInner('<div class="container"></div>');
