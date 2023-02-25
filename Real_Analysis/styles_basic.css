@@ -1,0 +1,198 @@
+:root {
+    --black: black;
+    --grayDeep: #292929;
+    --gray: #636363;
+    --grayLight: #b8b8b8;
+    --dirtyWhite: rgb(245, 245, 245);
+    --white: white;
+    --whiteDiff: white;
+}
+
+/*#region Setting Overides*/
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1.1em;
+    vertical-align: middle !important;
+}
+
+var {
+    font-family: 'LM Math' !important;
+}
+
+math-field {
+    font-family: 'LM math' !important;
+    font-style: italic !important;
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    fill: var(--black) !important;
+}
+
+.mq-nonSymbola {
+    font-family: 'LM Math' !important;
+    font-style: italic !important;
+}
+
+small var {
+    font-size: 1.55em !important;
+}
+
+big {
+    font-size: 1.7em !important;
+    font-stretch: 1% !important
+}
+
+.mq-scaled {
+    font-style: normal !important;
+}
+
+.mq-non-leaf {
+    padding-bottom: -10px !important;
+    vertical-align: middle !important;
+}
+
+
+.integralout {
+    top: -7px !important;
+}
+
+.integralmiddle {
+    display: inline-flex;
+    height: 2.2em !important;
+}
+
+.integralbottom {
+    display: inline-flex;
+    margin-left: -18px !important;
+}
+
+.mq-large-operator {
+    margin-right: 5px !important;
+    margin-left: 8px !important;
+}
+
+.mq-to, .mq-from {
+    text-align: center;
+}
+
+.mq-to {
+    margin-bottom: -5px !important;
+}
+
+.mq-from {
+    margin-top: -5px !important;
+}
+
+.mq-root-block {
+    transform: scale(1.1, 1.1);
+}
+
+/*#endregion*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 48px 27.5% 0 27.5%;
+}
+
+main {
+    flex: 1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.fullspan {
+    width: 100%;
+}
+
+.divUnderline {
+    border-bottom: 3px solid var(--dirtyWhite);
+}
+
+p {
+    text-indent: 3em;
+    font-family: 'LM';
+    white-space: pre-wrap;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+h1 {
+    font-family: 'LM';
+    font-weight: 'Bold';
+    font-size: 2em;
+    margin-top: 1.075em;
+    margin-bottom: 0.2em;
+    width: 80%;
+}
+
+.iconv {
+    position: relative;
+    top: 1em;
+    right: 0.2em;
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'LM Mono';
+    color: rgb(94, 214, 214);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h2 {
+    margin: 1em 0 -.4em 0;
+    font-size: 1.5em;
+    font-family: 'LM';
+    letter-spacing: 1px;
+    counter-increment: h2-counter;
+}
+
+h2:before {
+    content: counter(h2-counter) " ";
+    padding-right: 1em;
+}
+
+h3 {
+    margin: 0.8em 0 -.5em 0;
+    font-size: 1.2em;
+    font-family: 'LM';
+    letter-spacing: 1px;
+    counter-increment: h3-counter;
+}
+
+h3:before {
+    content: counter(h2-counter) "."counter(h3-counter) " ";
+    padding-right: 1em;
+}
+
+#invert-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    color: var(--black);
+    background-color: var(--whiteDiff)
+}
