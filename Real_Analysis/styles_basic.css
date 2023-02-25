@@ -139,6 +139,11 @@ main {
     justify-content: center;
 }
 
+.abscenter {
+    text-align: center !important;
+    justify-content: baseline !important;
+}
+
 .fullspan {
     width: 100%;
 }
@@ -171,8 +176,13 @@ h1 {
     font-size: 2em;
     font-weight: 900;
     font-family: 'LM Mono';
+}
+
+.accent {
     color: rgb(94, 214, 214);
 }
+
+
 
 .noselect {
     -webkit-touch-callout: none;

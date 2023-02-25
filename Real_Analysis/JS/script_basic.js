@@ -44,30 +44,39 @@ function Prep(PrevLink, NextLink) {
             `
         <nav>
             <ul class="nav-list">
+                <li id = "title" class = "noselect"><a href="Index.html"><span id="deepaccent">Real </span>Analysis</a></li>
                 <li><a class="prevnext noselect" href="` +
             PrevLink +
             `"><span>&#8592;</span></a></li>
-                <li id = "title" class = "noselect"><a href="Index.html">Real Analysis</a></li>
+            <span></span>
                 <li><a class="prevnext noselect" href="` +
             NextLink +
             `"><span>&#8594;</span></a></li>
             </ul>
         </nav>
         <style>
+            #deepaccent{
+                padding:0;
+                margin:0;
+                font-size: 1em;
+                position: relative;
+                bottom: 2px;
+                color: rgb(94, 196, 196);
+            }
             .prevnext span{
                 font-family: "LM Math";
-                position: relative;
-                right: 50%;
+            }
+            ul > span{
+                width: 10%;
             }
             #title a{
                 font-size: 1em;
             }
-
             nav {
                 background-color: rgba(255, 255, 255, 0.8);
                 justify-content: center;
                 backdrop-filter: blur(2px);
-               -webkit-backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
                 position: fixed;
                 top: 0;
                 width: 100%;
@@ -89,7 +98,7 @@ function Prep(PrevLink, NextLink) {
                 font-weight: bold;
             }
             #title{
-                margin: 0px 15%;
+                margin: 0px 20% 0 0;
             }
         </style>
         `;
