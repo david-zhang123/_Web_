@@ -236,3 +236,6 @@ body {
     color: var(--black);
     background-color: var(--whiteDiff)
 }
+.filler{
+    height: 1.2em;
+}
